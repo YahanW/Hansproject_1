@@ -1,5 +1,6 @@
 {
   "name": "project_1",
+  "homepage": "https://yahanw.github.io/project_1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,10 +15,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pagesn-d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "tailwindcss": "^3.3.2"
   }
 }
