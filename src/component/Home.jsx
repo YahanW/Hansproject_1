@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {HiAcademicCap, HiArrowNarrowRight} from 'react-icons/hi'
 import { Link } from 'react-scroll'
+import SnowFlake from '../asset/snowflake-png.webp'
+
 
 const Home = () => {
+
   return (
     <div name='home' className='w-full h-screen bg-[#16162c]'>
 
