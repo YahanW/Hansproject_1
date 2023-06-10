@@ -5,17 +5,23 @@ import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../asset/yw.png'
 import {Link} from 'react-scroll'
 import SnowFlake from '../asset/snowflake-png.webp'
+import {useDispatch, useSelector} from 'react-redux'
+import { change } from '../redux/sickoMode'
 
 
 const Navbar = () => { 
 
+    const { value } = useSelector((state) => state.sicko)
+    // const state = useSelector((state)=>state.sicko.state)
+    const dispatch = useDispatch()
     const [nav, setNav] = useState(false) // for the hamburger to show/hide
-    const [sicko, setSicko] = useState(false)
+
     const handleClick = ()=> setNav(!nav)
    
     const handleSickoChange = ()=>{
-        console.log("switch")
-        setSicko(!sicko);
+       
+        dispatch(change())
+        // console.log(value)
     }
 
 
@@ -36,8 +42,8 @@ const Navbar = () => {
                 type="checkbox"
                 role="switch"
                 id="flexSwitchCheckDefault" 
-                onChange={handleSickoChange}/>
-            <a>Sicko Mode</a>
+                  onChange={handleSickoChange}/>
+            <a>Let it snow</a>
 
         </div>
 
@@ -127,10 +133,7 @@ const Navbar = () => {
             </ul>
         </div>
 
-        {/* spinning snowflake */}
-        <div className='box'>
-            <img className={sicko ? 'mt-5 ml-5 w-[60px] h-[60px] animate-spin' : ' hidden'} src={SnowFlake} />
-        </div>
+
 
     </div>
   )
