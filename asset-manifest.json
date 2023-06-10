@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hansproject_1/static/css/main.7f25b2eb.css",
-    "main.js": "/Hansproject_1/static/js/main.fe0e8f55.js",
+    "main.css": "/Hansproject_1/static/css/main.2b34f4ee.css",
+    "main.js": "/Hansproject_1/static/js/main.9397a0bc.js",
     "static/media/EE.png": "/Hansproject_1/static/media/EE.76013188e3cc56065636.png",
     "static/media/yw.png": "/Hansproject_1/static/media/yw.4cc9b418b29fb37dc047.png",
     "static/media/react.png": "/Hansproject_1/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -13,11 +13,11 @@
     "static/media/firebase.png": "/Hansproject_1/static/media/firebase.209703cedf1b1a96bc52.png",
     "static/media/javascript.png": "/Hansproject_1/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/Hansproject_1/index.html",
-    "main.7f25b2eb.css.map": "/Hansproject_1/static/css/main.7f25b2eb.css.map",
-    "main.fe0e8f55.js.map": "/Hansproject_1/static/js/main.fe0e8f55.js.map"
+    "main.2b34f4ee.css.map": "/Hansproject_1/static/css/main.2b34f4ee.css.map",
+    "main.9397a0bc.js.map": "/Hansproject_1/static/js/main.9397a0bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f25b2eb.css",
-    "static/js/main.fe0e8f55.js"
+    "static/css/main.2b34f4ee.css",
+    "static/js/main.9397a0bc.js"
   ]
 }
