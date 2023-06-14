@@ -26,7 +26,9 @@ const Navbar = () => {
 
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#16162c] text-gray-50'>
+    <div className={ value?
+          'fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#82bfee] text-black-50':
+          'fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#16162c] text-gray-50'}>
         <div>
             <img src={Logo} alt="Logo Img" style={{width:'120px'}} />
         </div>

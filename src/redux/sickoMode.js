@@ -8,7 +8,7 @@ export const counterSlice = createSlice({
     reducers: {
         change: (state) => {
             state.value = !state.value;
-            console.log(state.value);
+            // console.log(state.value);
         }
     }
 })

@@ -5,10 +5,13 @@ import JavaScript from '../asset/javascript.png';
 import ReactImg from '../asset/react.png';
 import TailWind from '../asset/tailwind.png';
 import GitHub from '../asset/github.png';
+import { useDispatch, useSelector } from 'react-redux'
+
 
 const Skills = () => {
+    const { value } = useSelector((state) => state.sicko)
   return (
-      <div name='skills' className='w-full h-screen bg-[#16162c] text-gray-300'>
+      <div name='skills' className={value ? 'w-full h-screen text-black-300':'w-full h-screen bg-[#16162c] text-gray-300'}>
         {/* Container */}
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div className='ml-4'>
@@ -17,27 +20,39 @@ const Skills = () => {
             </div>
             {/* container for icons */}
             <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 '>
+                  <div className={value? 
+                  'shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-[#82bfee] ':
+                  'shadow-md shadow-[#040c16] hover:scale-110 duration-500 '}>
                     <img className='w-20 mx-auto' src={HTML} alt='html icon'/>
                     <p className='my-4'>HTML</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 '>
+                    <div className={value ?
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-[#82bfee] ' :
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 '}>
                     <img className='w-20 mx-auto' src={CSS} alt='html icon' />
                     <p className='my-4'>CSS</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 '>
+                  <div className={value ?
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-[#82bfee] ' :
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 '}>
                     <img className='w-20 mx-auto' src={JavaScript} alt='html icon' />
                     <p className='my-4'>JavaScript</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 '>
+                  <div className={value ?
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-[#82bfee] ' :
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 '}>
                     <img className='w-20 mx-auto' src={ReactImg} alt='html icon' />
                     <p className='my-4'>React.js</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 '>
+                  <div className={value ?
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-[#82bfee] ' :
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 '}>
                     <img className='w-20 mx-auto' src={TailWind} alt='html icon' />
                     <p className='my-4'>TailWind</p>
                 </div>
-                <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500 '>
+                  <div className={value ?
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 bg-[#82bfee] ' :
+                      'shadow-md shadow-[#040c16] hover:scale-110 duration-500 '}>
                     <img className='w-20 mx-auto' src={GitHub} alt='html icon' />
                     <p className='my-4'>GitHub</p>
                 </div>
