@@ -7,12 +7,14 @@ import Skills from "./component/Skills";
 import Work from "./component/Work";
 import Snow from "./component/Snow";
 import SnowFlake from './asset/snow3.gif'
+import Galant from "./component/Galant";
+import Dashboard from "./component/Dashboard";
 
 function App() {
   return (
     <div className="App">
       <div className='fixed w-full h-screen bg-gray-300 -z-10' style={{ backgroundImage: `url(${SnowFlake})` }}/>
-        <Snow />
+        {/* <Snow />
         <Navbar/>
 
         <Home />
@@ -20,6 +22,8 @@ function App() {
         <Skills />
         <Work />
         <Contact />
+        <Galant /> */}
+        <Dashboard />
       
     </div>
   );
