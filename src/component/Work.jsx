@@ -1,6 +1,7 @@
 import React from 'react'
 import WorkImg from '../asset/firebase.png'
 import EventEasy from '../asset/EE.png'
+import Weather from '../asset/weather-icon-png-8.png'
 import { useDispatch, useSelector } from 'react-redux'
 
 
@@ -38,21 +39,21 @@ const Work = () => {
 
                   {/* card item */}
                   <div
-                      style={{ backgroundImage: `url(${WorkImg})` }}
+                      style={{ backgroundImage: `url(${Weather})` }}
                       className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div '>
 
                       {/* Hover effects */}
                       <div className='opcity-0 group-hover:opacity-100 '>
                           <span className='text-2xl font-bold text-white tracking-wider'>
-                             Android App coming soon
+                             React X Tailwind
                           </span>
                           <div className='pt-8 text-center'>
-                              {/* <a href=''>
+                              <a href='https://hans-weather-1eyybbu14-yahanw.vercel.app/'>
                                   <button className='text-center rounded-lg py-4 px-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                               </a>
-                              <a href=''>
+                              <a href='https://github.com/YahanW/hans-weather-app/tree/master'>
                                   <button className='text-center rounded-lg py-4 px-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                              </a> */}
+                              </a>
                           </div>
                       </div>
                       {/* end hover effect */}

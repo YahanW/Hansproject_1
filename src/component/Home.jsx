@@ -24,9 +24,7 @@ const Home = () => {
           <p className='text-[#8892b0] py-4 max-w-[700px]'>I'm a Graduate Developer specializing in building exceptional digital experiences. Currently, I'm Focused on building responsive full-stack web applications.</p>
           <div>
           <Link to="work" smooth={true} duration={500}>
-            <button className={value?
-              'text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 bg-[#82bfee]' :
-              'text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 '} >View Work
+            <button className={`text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 ${value ?"bg-[#82bfee]":""}`} >View Work
               <span className='group-hover:rotate-90 duration-300'>
                 <HiArrowNarrowRight className='ml-3 ' />
               </span>

@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <div className='fixed w-full h-screen bg-gray-300 -z-10' style={{ backgroundImage: `url(${SnowFlake})` }}/>
-        {/* <Snow />
+        <Snow />
         <Navbar/>
 
         <Home />
@@ -22,8 +22,8 @@ function App() {
         <Skills />
         <Work />
         <Contact />
-        <Galant /> */}
-        <Dashboard />
+        {/* <Galant /> */}
+        {/* <Dashboard /> */}
       
     </div>
   );

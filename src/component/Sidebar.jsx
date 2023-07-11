@@ -6,13 +6,11 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -20,8 +18,6 @@ import InsertInvitationIcon from '@mui/icons-material/InsertInvitation';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import DescriptionIcon from '@mui/icons-material/Description';
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
-import Greg from '../asset/pexels-pixabay-220453.jpg';
-import Acu from '../asset/accu.jpg';
 import Galant from './Galant';
 
 
@@ -69,7 +65,7 @@ function Sidebar(props) {
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
             <AppBar
-                position="fixed"
+                position="sticky"
                 sx={{
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
@@ -85,7 +81,6 @@ function Sidebar(props) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <p className='text-4xl'>Welcome, Amanda Bynes</p>
                 </Toolbar>
             </AppBar>
             <Box
@@ -120,27 +115,44 @@ function Sidebar(props) {
                     {drawer}
                 </Drawer>
             </Box>
+            
             <Box
                 component="main"
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
-                <Toolbar />
-                <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-                <Galant />
-                <Galant/>
-                <Galant/>
-                <Galant/>
-                <Galant/>
-                <Galant/>
-                <Galant/>
-                <Galant/>
-                <Galant/>
-                <Galant/>
-                <Galant/>
-
-
+                <Toolbar/>
+                <Toolbar>
+                    <a className='text-4xl'>Welcome, Amanda Bynes</a>
+                </Toolbar>
+                <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+                    <Galant />
+                    <Galant />
+                    <Galant />
+                    <Galant />
+                    <Galant />
+                    <Galant />
                 </div>
             </Box>
+            <Box
+                component="main"
+                sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+            >
+                <Typography paragraph>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
+                    enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
+                    imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
+                    Convallis convallis tellus id interdum velit laoreet id donec ultrices.
+                    Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
+                    adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
+                    nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
+                    leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
+                    feugiat vivamus at augue. At augue eget arcu dictum varius duis at
+                    consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
+                    sapien faucibus et molestie ac.
+                </Typography>
+            </Box>
+
         </Box>
     );
 }
