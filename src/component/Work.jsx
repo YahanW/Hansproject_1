@@ -48,7 +48,7 @@ const Work = () => {
                              React X Tailwind
                           </span>
                           <div className='pt-8 text-center'>
-                              <a href='https://hans-weather-1eyybbu14-yahanw.vercel.app/'>
+                              <a href='https://hans-weather-app.vercel.app/'>
                                   <button className='text-center rounded-lg py-4 px-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                               </a>
                               <a href='https://github.com/YahanW/hans-weather-app/tree/master'>
